@@ -54,13 +54,14 @@ def test_unsupported_version():
     raise RuntimeError("UnsupportedApiVersion exception not raised when it should have been.")
 
 
-TEST_DATETIME_EARLIEST = datetime.datetime(2012, 9, 6, 23, 0, tzinfo=pytz.UTC)
+TEST_DATETIME_EARLIEST = datetime.datetime(2012, 9, 6, 23, 0)
 TEST_DATETIME_EARLIEST_STRING = u'/Date(1346972400000)/'
 
 TEST_DATE_MIDDLING = datetime.date(2012, 9, 13)
 
-TEST_DATETIME_LATEST = datetime.datetime(2012, 9, 20, 23, 0, tzinfo=pytz.UTC)
+TEST_DATETIME_LATEST = datetime.datetime(2012, 9, 20, 23, 0)
 TEST_DATETIME_LATEST_STRING = u'/Date(1348182000000)/'
+
 
 TEST_RESPONSE_JSON = {
     u'Paths': [{u'Url': u'',
